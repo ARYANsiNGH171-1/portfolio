@@ -126,10 +126,6 @@ const data = [
         "name": "Photo"
     },
     {
-        "imageUrl": "./images/IMG_2440.webp",
-        "name": "Photo"
-    },
-    {
         "imageUrl": "./images/IMG_2441.webp",
         "name": "Photo"
     },
