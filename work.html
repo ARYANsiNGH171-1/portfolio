@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css"
+        integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="mb-10 w-screen px-1 py-1 sm:px-10 sm:py-5">
+        <div class="flex items-center justify-between px-4 py-1 bg-background">
+            <h1 id="headerName" class="text-3xl md:text-4xl font-[Urbanist] font-bold text-black">ARYAN SINGH</h1>
+            <nav class="gap-6 hidden md:flex ">
+                <a href="/index.html" class="text-zinc-500 hover:text-black">WELCOME</a>
+                <a href="/about.html" class="text-zinc-500 hover:text-black">ABOUT</a>
+                <a href="/work.html" class="text-black font-bold">WORKS</a>
+                <a href="/contact.html" class="text-zinc-500 hover:text-black">CONTACT</a>
+            </nav>
+            <div class="ham-box flex md:hidden" id="mobile__menu__btn">
+                <div class="ham-top bg-gray-500"></div>
+                <div class="ham-middle bg-gray-500"></div>
+                <div class="ham-bottom bg-gray-500"></div>
+            </div>
+        </div>
+        <nav id="mobile__menu"
+            class="gap-5 flex flex-col justify-center items-center md:hidden w-screen h-[20rem] bg-gray-100 backdrop-blur-3xl p-8 text-xl fixed z-50">
+            <a href="/index.html" class="text-zinc-500 hover:text-black">WELCOME</a>
+            <a href="/about.html" class="text-zinc-500 hover:text-black">ABOUT</a>
+            <a href="/work.html" class="text-black font-bold">WORKS</a>
+            <a href="/contact.html" class="text-zinc-500 hover:text-black">CONTACT</a>
+        </nav>
+    </header>
+    <div class="bg-white h-svh py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8 pb-10             ">
+            <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+                <div class="flex items-center gap-12">
+                    <h2 class="text-2xl font-bold text-gray-800 lg:text-3xl ">Gallery</h2>
+                </div>
+
+                <a href="#"
+                    class="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">
+                    More
+                </a>
+            </div>
+
+            <div id="image__container" class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8 ">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.js"
+        integrity="sha512-oaWLach/xXzklmJDBjHkXngTCAkPch9YFqOSphnw590sy86CVEnAbcpw17QjkUGppGmVJojwqHmGO/7Xxx6HCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

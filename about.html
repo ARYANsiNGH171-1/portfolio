@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="mb-10 w-screen px-1 py-1 sm:px-10 sm:py-5">
+        <div class="flex items-center justify-between px-4 py-1 bg-background">
+            <h1 id="headerName" class="text-3xl md:text-4xl font-[Urbanist] font-bold text-black">ARYAN SINGH</h1>
+            <nav class="gap-6 hidden md:flex ">
+                <a href="/index.html" class="text-zinc-500 hover:text-black">WELCOME</a>
+                <a href="/about.html" class="text-black font-bold">ABOUT</a>
+                <a href="/work.html" class="text-zinc-500 hover:text-black">WORKS</a>
+                <a href="/contact.html" class="text-zinc-500 hover:text-black">CONTACT</a>
+            </nav>
+            <div class="ham-box flex md:hidden" id="mobile__menu__btn">
+                <div class="ham-top bg-gray-500"></div>
+                <div class="ham-middle bg-gray-500"></div>
+                <div class="ham-bottom bg-gray-500"></div>
+            </div>
+        </div>
+        <nav id="mobile__menu"
+            class="gap-5 flex flex-col justify-center items-center md:hidden w-screen h-[20rem] bg-gray-100 backdrop-blur-3xl p-8 text-xl fixed z-50">
+            <a href="/index.html" class="text-zinc-500 hover:text-black">WELCOME</a>
+            <a href="/about.html" class="text-black font-bold">ABOUT</a>
+            <a href="/work.html" class="text-zinc-500 hover:text-black">WORKS</a>
+            <a href="/contact.html" class="text-zinc-500 hover:text-black">CONTACT</a>
+        </nav>
+    </header>
+
+    <div id="container" class=" w-auto flex px-10 mb-10 sm:px-24 justify-center relative">
+
+        <div id="container"
+            class=" md:p-12  w-auto flex flex-col justify-center items-center md:flex-row px-4 sm:px-8 md:px-24 lg:px-24 xl:px-24 relative">
+            <div class=" flex justify-center items-center md:mr-10">
+                <img class="rounded-lg min-w-[100px] w-full h-auto md:w-auto md:h-auto" src="./hero.JPG"
+                    alt="image of myself" />
+            </div>
+            <div class="w-full sm:w-[70%] md:w-[60%] lg:w-[50%]">
+                <h1 class="text-black font-bold text-3xl mt-6 mb-8">
+                    Hey it's me, Aryan Singh
+                </h1>
+
+                <p class="text-black w-full sm:w-[35rem] md:w-[30rem] lg:w-[25rem] mb-10">
+                    I am Aryan Singh a passionate creative person and want to
+                    create visuals of my narrative through filmmaking.
+                    I eager to explore and master the art of storytelling through the lens.
+                    With a strong curiosity and determination to learn,
+                    I am seeking opportunities that allow me to gain hands-on
+                    experience in filmmaking as well as in production outputs.
+                    My goal is to collaborate with creative professionals,
+                    contribute to impactful projects, and continuously grow my
+                    knowledge of the filmmaking process and in production process
+                </p>
+
+                <!-- <div id="social" class="flex flex-wrap justify-start items-center gap-4">
+                    <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/"
+                        class="bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white">
+                        <img class="mr-2 hover:scale-105 transition duration-300 ease-in-out"
+                            src="https://ucarecdn.com/95eebb9c-85cf-4d12-942f-3c40d7044dc6/linkedin.svg" width="20px"
+                            height="20px" alt="LinkedIn" />
+                        <span>Follow me on Linkedin</span>
+                    </a>
+                    <a rel="noopener" target="_blank" href="https://twitter.com/"
+                        class="bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white">
+                        <img class="mr-2 hover:scale-105 transition duration-300 ease-in-out"
+                            src="https://ucarecdn.com/82d7ca0a-c380-44c4-ba24-658723e2ab07/" width="20px" height="20px"
+                            alt="Twitter" />
+                        <span>Follow me on Twitter</span>
+                    </a>
+                </div> -->
+
+                <div id="Skill" class="mt-10 p-6 bg-gray-100 rounded-lg shadow-lg w-full">
+                    <h1 class="text-black font-bold text-2xl mb-4 border-b-2 border-gray-300 pb-2">
+                        My Skills
+                    </h1>
+                    <ul class="flex flex-col gap-1 text-lg text-gray-700">
+                        <li class="flex items-center gap-2">
+                            <span class="text-blue-500">✔</span> Video Editing (DaVinci Resolve)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-blue-500">✔</span> Camera Operation
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-blue-500">✔</span> Photography
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-blue-500">✔</span> Videography
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-blue-500">✔</span> Narration - Storytelling
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-blue-500">✔</span> Script Writing
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-blue-500">✔</span> Designing
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+            integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

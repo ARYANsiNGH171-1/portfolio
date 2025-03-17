@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&family=Roboto&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+#name{
+    color: black;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #80F0FF;
+  font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+}
+
+#backg{
+    background-image: url("./bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100svh;
+
+}
+
+#mobile__menu{
+  display: flex;
+  opacity: 0;
+  scale: 0;
+}
+
+#mobile__menu__btn.active{
+  right: 0;
+}
+
+
+.ham-box {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+
+.ham-top {
+  height: 2px;
+  width: 2.6rem;
+  transition: all 0.5s ease-in-out;
+}
+.ham-middle {
+  height: 2px;
+  width: 2.2rem;
+  margin: 7px 0;
+  transition: all 0.5s ease-in-out;
+}
+.ham-bottom {
+  height: 2px;
+  width: 2.0rem;
+  transition: all 0.5s ease-in-out;
+}
+/* ----------Animation------------ */
+
+.ham-box.open .ham-middle {
+  transform: translateX(-50px);
+  background: transparent;
+}
+.ham-box.open .ham-top {
+  transform: rotate(45deg) translate(6px, 6px);
+  width: 2.6rem;
+}
+.ham-box.open .ham-bottom {
+  width: 2.6rem;
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+#headerName{
+  font-family: "Preahvihear", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}

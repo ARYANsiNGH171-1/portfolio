@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+    <link href="./output.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="mb-10 w-screen px-1 py-1 sm:px-10 sm:py-5">
+        <div class="flex items-center justify-between px-4 py-1 bg-background">
+            <h1 id="headerName" class="text-3xl md:text-4xl font-[Urbanist] font-bold text-black">ARYAN SINGH</h1>
+            <nav class="gap-6 hidden md:flex ">
+                <a href="/index.html" class="text-zinc-500 hover:text-black">WELCOME</a>
+                <a href="/about.html" class="text-zinc-500 hover:text-black">ABOUT</a>
+                <a href="/work.html" class="text-zinc-500 hover:text-black">WORKS</a>
+                <a href="/contact.html" class="text-black font-bold">CONTACT</a>
+            </nav>
+            <div class="ham-box flex md:hidden" id="mobile__menu__btn">
+                <div class="ham-top bg-gray-500"></div>
+                <div class="ham-middle bg-gray-500"></div>
+                <div class="ham-bottom bg-gray-500"></div>
+            </div>
+        </div>
+        <nav id="mobile__menu"
+            class="gap-5 flex flex-col justify-center items-center md:hidden w-screen h-[20rem] bg-gray-100 backdrop-blur-3xl p-8 text-xl fixed z-50">
+            <a href="/index.html" class="text-zinc-500 hover:text-black">WELCOME</a>
+            <a href="/about.html" class="text-zinc-500 hover:text-black">ABOUT</a>
+            <a href="/work.html" class="text-zinc-500 hover:text-black">WORKS</a>
+            <a href="/contact.html" class="text-black font-bold">CONTACT</a>
+        </nav>
+    </header>
+    <main>
+        <div class="max-w-lg mx-auto p-6 bg-card rounded-lg shadow-md">
+            <h1 class="text-2xl font-bold text-foreground">LET'S SHOOT.</h1>
+            <p class="text-muted-foreground mb-4">for all bookings and inquiries please fill out the form below.</p>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-foreground pb-1" for="first-name">NAME
+                        <span class="text-sm text-black/50">(required)</span></label>
+                    <div class="flex gap-2 flex-col md:flex-row">
+                        <input type="text" id="first-name" placeholder="First Name"
+                            class="flex-1 p-2 border border-border rounded bg-gray-100" required />
+                        <input type="text" id="last-name" placeholder="Last Name"
+                            class="flex-1 p-2 border border-border rounded bg-gray-100" required />
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-foreground pb-1" for="email">EMAIL <span
+                            class="text-sm text-black/50">(required)</span></label>
+                    <input type="email" id="email" placeholder="Email"
+                        class="w-full p-2 border border-border rounded bg-gray-100" required />
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-foreground pb-1" for="message">MESSAGE
+                        <span class="text-sm text-black/50">(required)</span></label>
+                    <textarea id="message" placeholder="Your message..." rows="4"
+                        class="w-full p-2 border border-border rounded bg-gray-100" required></textarea>
+                </div>
+
+
+
+                <button type="submit" class="bg-black text-white hover:bg-[#555] px-4 py-2 rounded">SUBMIT</button>
+            </form>
+        </div>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
